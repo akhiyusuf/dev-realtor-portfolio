@@ -36,10 +36,10 @@ export function Navigation() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 w-full flex items-center justify-between p-4 bg-background border-b">
+      <nav className="sticky top-0 z-50 w-full flex items-center justify-between p-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
         <div className="flex lg:flex-1">
           <Link href="/" className="text-xl font-bold">
-            Dev+Realtor
+            RE Agent + Dev
           </Link>
         </div>
 
