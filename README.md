@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hybrid Real Estate + Developer Portfolio
 
-## Getting Started
+A modern, responsive portfolio website showcasing both real estate and software development expertise. Built with Next.js 14, Tailwind CSS, and shadcn/ui components.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Design & UI
+- Clean, modern interface with responsive design
+- Dynamic theme switching (Day/Night mode) using `next-themes`
+- Mobile-first approach with breakpoint-specific optimizations
+- Carefully crafted typography and spacing
+- Smooth transitions and hover effects
+
+### Navigation
+- Responsive navigation with mobile sidebar
+- Smart button text adaptation for different screen sizes:
+  - < 455px: "Browse Homes" | "See Projects"
+  - ≥ 455px: "Browse Properties" | "View Development Projects"
+- Custom breakpoints for optimal layout:
+  - < 340px: Stacked layout for developer section
+  - < 640px: Mobile-optimized spacing and sizing
+  - ≥ 640px: Desktop layout with enhanced button styling
+
+### Theme System
+- Seamless theme switching between Day and Night modes
+- Theme-aware components with proper color transitions
+- Persistent theme selection across sessions
+- Theme-specific UI optimizations
+
+## Technical Stack
+
+### Core Technologies
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Theme Management**: next-themes
+- **Icons**: Lucide Icons
+
+### Key Dependencies
+```json
+{
+  "next": "^14.0.0",
+  "react": "^18.0.0",
+  "tailwindcss": "^3.0.0",
+  "next-themes": "^0.2.0",
+  "lucide-react": "latest"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+dev-realtor-portfolio/
+├── app/
+│   ├── components/
+│   │   ├── nav.tsx          # Navigation component with theme toggle
+│   │   └── ui/             # shadcn/ui components
+│   ├── layout.tsx          # Root layout with theme provider
+│   └── page.tsx           # Main landing page
+├── public/                # Static assets
+└── styles/               # Global styles and Tailwind config
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Development Journey
 
-## Learn More
+### UI/UX Improvements
+- Implemented responsive text changes for improved mobile readability
+- Added underline decoration for primary action buttons
+- Optimized button spacing and alignment
+- Created smooth theme transitions
 
-To learn more about Next.js, take a look at the following resources:
+### Mobile Optimizations
+- Custom breakpoint handling for various screen sizes
+- Smart component stacking on smaller screens
+- Adjusted typography scaling
+- Enhanced touch targets for mobile users
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup & Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Property listing integration
+- Development project showcase
+- Contact form implementation
+- Blog section for real estate and tech insights
+- Advanced filtering and search capabilities
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Feel free to submit issues and enhancement requests.
+
+## License
+
+MIT License - feel free to use this project as a template for your own portfolio.
