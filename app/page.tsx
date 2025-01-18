@@ -69,7 +69,7 @@ export default function Home() {
               </div>
             </h1>
             <p className="max-w-[750px] text-base text-muted-foreground sm:text-xl mt-4">
-              Bridging the gap between technology and real estate. Bringing software expertise and property knowledge together.
+              Catchy, right? When I'm not a superhero (lol). Till I get my ESVARBON license, for now, you can call me your friendly neighbourhood developer.
             </p>
             <div className="mt-6 flex gap-2 sm:gap-3 items-start">
               <Link
