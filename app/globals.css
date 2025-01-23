@@ -6,60 +6,43 @@
   :root {
     --background: hsl(0, 0%, 100%);
     --foreground: hsl(0, 0%, 0%);
-
     --card: hsl(0, 0%, 100%);
     --card-foreground: hsl(0, 0%, 0%);
-
     --popover: hsl(0, 0%, 100%);
     --popover-foreground: hsl(0, 0%, 0%);
-
     --primary: hsl(0, 0%, 0%);
     --primary-foreground: hsl(0, 0%, 100%);
-
     --secondary: hsl(0, 0%, 0%);
     --secondary-foreground: hsl(0, 0%, 100%);
-
     --muted: hsl(0, 0%, 0%);
     --muted-foreground: hsl(0, 0%, 100%);
-
     --accent: hsl(0, 0%, 0%);
     --accent-foreground: hsl(0, 0%, 100%);
-
     --destructive: hsl(0, 0%, 0%);
     --destructive-foreground: hsl(0, 0%, 100%);
-
     --border: hsl(0, 0%, 0%);
     --input: hsl(0, 0%, 0%);
     --ring: hsl(0, 0%, 0%);
-
     --radius: 0.5rem;
   }
 
   .dark {
     --background: hsl(0, 0%, 0%);
     --foreground: hsl(0, 0%, 100%);
-
     --card: hsl(0, 0%, 0%);
     --card-foreground: hsl(0, 0%, 100%);
-
     --popover: hsl(0, 0%, 0%);
     --popover-foreground: hsl(0, 0%, 100%);
-
     --primary: hsl(0, 0%, 100%);
     --primary-foreground: hsl(0, 0%, 0%);
-
     --secondary: hsl(0, 0%, 100%);
     --secondary-foreground: hsl(0, 0%, 0%);
-
     --muted: hsl(0, 0%, 100%);
     --muted-foreground: hsl(0, 0%, 0%);
-
     --accent: hsl(0, 0%, 100%);
     --accent-foreground: hsl(0, 0%, 0%);
-
     --destructive: hsl(0, 0%, 100%);
     --destructive-foreground: hsl(0, 0%, 0%);
-
     --border: hsl(0, 0%, 100%);
     --input: hsl(0, 0%, 100%);
     --ring: hsl(0, 0%, 100%);
@@ -73,4 +56,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.markdown-content {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: inherit;
 }

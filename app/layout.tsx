@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from './components/theme-provider';
+import { AiAssistant } from './components/ai-assistant';
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
-
-export const metadata: Metadata = {
-  title: "RE Agent + Dev",
-  description: "Real Estate Agent by Day, Developer by Night",
-};
 
 export default function RootLayout({
   children,
@@ -32,6 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <AiAssistant />
         </ThemeProvider>
       </body>
     </html>
